@@ -1,0 +1,67 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><block type="device_forever" id="xy(MEv:VXkXoLq=ueC;;" x="-347" y="-903"><statement name="HANDLER"><block type="device_show_leds" id="x~@NRrTk?,CqQlbd?:H^"><field name="LEDS">`
+        # . . . # 
+        # # . . # 
+        # . # . # 
+        # . . # # 
+        # . . . #
+        `</field><next><block type="device_show_leds" id="AKz_5~7@m6Up*A9bI.6d"><field name="LEDS">`
+        . . # . . 
+        . . # . . 
+        . . # . . 
+        . . # . . 
+        . . # . .
+        `</field><next><block type="device_show_leds" id="C:TS!02[rndZJ63KCI0R"><field name="LEDS">`
+        # # # # # 
+        # . . . . 
+        # . # # # 
+        # . . # . 
+        # # # # .
+        `</field><next><block type="device_show_leds" id="J/eqt_=)({97{~wlktN7"><field name="LEDS">`
+        # # # # # 
+        # . . . . 
+        # . # # # 
+        # . . # . 
+        # # # # .
+        `</field><next><block type="device_show_leds" id="/xJim1K!p!gWf[Pe1Yn4"><field name="LEDS">`
+        # # # # # 
+        # . . . . 
+        # # # # # 
+        # . . . . 
+        # # # # #
+        `</field><next><block type="device_show_leds" id="(-2Oui@||z6qwR+FJhF8"><field name="LEDS">`
+        # # # # # 
+        # . . . # 
+        # # # # # 
+        # # # . . 
+        # . . # #
+        `</field><next><block type="device_show_leds" id="syZB?FM+u}Ak6hH-NR1T"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . .
+        `</field><next><block type="device_show_leds" id="Mcd/r2)({%V:b_r#o7d."><field name="LEDS">`
+        # # # # # 
+        . . # . . 
+        . . # . . 
+        . . # . . 
+        . . # . .
+        `</field><next><block type="device_show_leds" id="//2[HW),FrXZJO@T|XJO"><field name="LEDS">`
+        # # # # # 
+        # . . . # 
+        # . . . # 
+        # . . . # 
+        # # # # #
+        `</field><next><block type="device_show_leds" id="Hcq(h|HqC*4nB/@-`2AL"><field name="LEDS">`
+        # . . . # 
+        # # . . # 
+        # . # . # 
+        # . . # # 
+        # . . . #
+        `</field><next><block type="device_show_leds" id="5dvXhcLjtp_zFI,(T}10"><field name="LEDS">`
+        # # # # # 
+        # . . . . 
+        # . # # # 
+        # . . # . 
+        # # # # .
+        `</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block><block type="device_forever" id="[*=Aj{*%r/`MdXquuZ]%" x="0" y="0"><statement name="HANDLER"><block type="controls_if" id="F|{P[X[nsh1nPTb-1A.x"><mutation elseif="2" else="1"></mutation><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_operation" id="3z4@wE.8@09Z4,K5U.FW"><field name="OP">AND</field><value name="A"><block type="mbit_Line_Sensor" id=":ZOSs$}y?@mcLAgBz}^Q"><field name="direct">mbit_Robot.enPos.LeftState</field><field name="value">mbit_Robot.enLineState.White</field></block></value><value name="B"><block type="mbit_Line_Sensor" id="@@8iz:L-zCnM{AZc`W79"><field name="direct">mbit_Robot.enPos.RightState</field><field name="value">mbit_Robot.enLineState.White</field></block></value></block></value><statement name="DO0"><block type="mbit_CarCtrlSpeed" id="]Lg5wa+m8{:1@y^^KY.,"><field name="index">mbit_Robot.CarState.Car_Run</field><value name="speed"><shadow type="math_number_minmax" id="TTX_pTW%[UGs`MUv64I5"><mutation min="0" max="255" label="Speed" precision="0"></mutation><field name="SLIDER">80</field></shadow></value></block></statement><value name="IF1"><block type="logic_operation" id="/Q%:1zj_=hnYnEz=IF`1"><field name="OP">AND</field><value name="A"><block type="mbit_Line_Sensor" id="*YN04is;V(bT%K}2c(gJ"><field name="direct">mbit_Robot.enPos.LeftState</field><field name="value">mbit_Robot.enLineState.White</field></block></value><value name="B"><block type="mbit_Line_Sensor" id="]}|dhEHxj$61xtKxONy4"><field name="direct">mbit_Robot.enPos.RightState</field><field name="value">mbit_Robot.enLineState.Black</field></block></value></block></value><statement name="DO1"><block type="mbit_CarCtrlSpeed" id="+C|N5MpX3jmZ]6v*50Lh"><field name="index">mbit_Robot.CarState.Car_SpinRight</field><value name="speed"><shadow type="math_number_minmax" id="+k,cbff)v:_sWS[q^I?c"><mutation min="0" max="255" label="Speed" precision="0"></mutation><field name="SLIDER">100</field></shadow></value></block></statement><value name="IF2"><block type="logic_operation" id=".YJDU`kysH)z;^#Y(Gm0"><field name="OP">AND</field><value name="A"><block type="mbit_Line_Sensor" id="QOUMsin,*bNEYm3C8T_o"><field name="direct">mbit_Robot.enPos.LeftState</field><field name="value">mbit_Robot.enLineState.Black</field></block></value><value name="B"><block type="mbit_Line_Sensor" id="bA_u2D$)Vlom~F-Hu60]"><field name="direct">mbit_Robot.enPos.RightState</field><field name="value">mbit_Robot.enLineState.White</field></block></value></block></value><statement name="DO2"><block type="mbit_CarCtrlSpeed" id="1-Yn/vd+JK#a0qUWU8o1"><field name="index">mbit_Robot.CarState.Car_SpinLeft</field><value name="speed"><shadow type="math_number_minmax" id="BYY?ZFS;Th19C;WE$L;)"><mutation min="0" max="255" label="Speed" precision="0"></mutation><field name="SLIDER">100</field></shadow></value></block></statement><statement name="ELSE"><block type="mbit_CarCtrl" id="L?u-]QF1y*A5J@ea26pT"><field name="index">mbit_Robot.CarState.Car_Stop</field></block></statement></block></statement></block></xml>
